@@ -1,0 +1,9 @@
+dbt_athena_iceberg:
+  outputs:
+    dev:
+        type: athena
+        s3_staging_dir: [PATH S3]
+        region_name: [AWS REGION]
+        database: awsdatacatalog
+        schema: demo_dbt
+  target: dev
